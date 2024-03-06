@@ -59,7 +59,7 @@ body{
 }
 
 div{
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 span{
@@ -92,4 +92,8 @@ button{
 #heart:active {
     color: red;
     transform: scale(2);
+}
+
+#heart:focus {
+    color: red;
 }
