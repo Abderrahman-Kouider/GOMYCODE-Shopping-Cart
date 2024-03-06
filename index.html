@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<div id="shopping-cart">
+    <div id="items">
+        <h1 style="margin-top: -20px;">ITEMS</h1>
+
+        <div id="shopping-items">
+            <div id="shopping-item1" class="shopping-item">
+                <img class="card-img" src="https://oman.gccgamers.com/rtx-4090/assets/product.webp" alt="RTX-Card"><br>RTX 4090<br></nr><span>$</span><span id="price1">250</span> 
+            
+                <button id="increase-item-1" class="increase-button">+</button> <input readonly id="item-1-input" type="number" value="1" min="1"> 
+                <button id="decrease-item-1" class="decrease-button">-</button>
+            
+                <button id="heart"><i class="ri-heart-fill"></i></button>
+                <button id="bin1"><i class="ri-delete-bin-line"></i></button>
+            </div>
+
+            <div id="shopping-item2" class="shopping-item">
+                <img class="card-img" src="https://oman.gccgamers.com/rtx-4090/assets/product.webp" alt="RTX-Card"><br>RTX 4080<br><span>$</span><span id="price2">200</span> 
+        
+                <button id="increase-item-2" class="increase-button">+</button> <input readonly id="item-2-input" type="number" value="1" min="1"> 
+                <button id="decrease-item-2" class="decrease-button">-</button>
+            
+                <button id="heart"><i class="ri-heart-fill"></i></button>
+                <button id="bin2"><i class="ri-delete-bin-line"></i></button>    
+
+        </div>
+
+                <div id="shopping-item3" class="shopping-item">
+                    <img class="card-img" src="https://oman.gccgamers.com/rtx-4090/assets/product.webp" alt="RTX-Card"><br>RTX 4060 super</card><br><span>$</span><span id="price3">200</span>             
+            
+                <button id="increase-item-3" class="increase-button">+</button> <input readonly id="item-3-input" type="number" value="1" min="1"> 
+                <button id="decrease-item-3" class="decrease-button">-</button>
+            
+                <button id="heart"><i class="ri-heart-fill"></i></button>
+                <button id="bin3"><i class="ri-delete-bin-line"></i></button>
+
+            </div>
+        </div>
+        <h1 style="margin-top: 20px;">TOTAL</h1><span>$</span><span id="totalprice">0</span>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
