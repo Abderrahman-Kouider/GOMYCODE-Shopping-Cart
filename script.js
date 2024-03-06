@@ -129,3 +129,27 @@ function deleteItem3() {
     item3.remove();
     totalSpan.innerText = total;
 }
+
+//adding heart red color
+
+var heart1 = document.getElementById('heart1')
+var heart2 = document.getElementById('heart2')
+var heart3 = document.getElementById('heart3')
+
+heart1.addEventListener("click", turnRed1);
+heart2.addEventListener("click", turnRed2);
+heart3.addEventListener("click", turnRed3);
+
+function turnRed1(event) {
+  event.target.style.color = "red";
+}
+
+function turnRed2(event) {
+   event.target.style.color = "red";
+}
+
+function turnRed3(event) {
+    event.target.style.color = "red";
+}
+  
+ 

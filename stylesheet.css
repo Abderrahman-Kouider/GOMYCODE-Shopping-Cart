@@ -85,15 +85,10 @@ button{
     font-size: 20px;
 }
 
-#heart:hover {
+#heart1:hover, #heart2:hover, #heart3:hover {
     color: red;
 }
 
-#heart:active {
-    color: red;
-    transform: scale(2);
-}
-
-#heart:focus {
-    color: red;
+#heart1:active, #heart2:active, #heart3:active {
+    transform: scale(1.8);
 }
