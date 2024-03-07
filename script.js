@@ -91,7 +91,7 @@ function decrement3() {
 //Adding totals and updating display
 
 
-var total = price1 + price2 + price3
+let total = price1 + price2 + price3
 
 var totalSpan = document.getElementById('totalprice')
 
@@ -100,15 +100,14 @@ totalSpan.innerText = total;
 
 function updateTotal(){
 
-let total = price1 + price2 + price3;
+total = price1 + price2 + price3;
 
 totalSpan.innerText = total;
 }
 
-//deleting items using the bin icon
+//Deleting items using the bin icon
 function deleteItem1() {
     var item1 = document.getElementById('shopping-item1');
-    let total = price1 + price2 + price3
     total -= price1;
     item1.remove();
     totalSpan.innerText = total;
@@ -116,7 +115,6 @@ function deleteItem1() {
 
 function deleteItem2() {
     var item2 = document.getElementById('shopping-item2');
-    let total = price1 + price2 + price3
     total -= price2;
     item2.remove();
     totalSpan.innerText = total;
@@ -124,32 +122,28 @@ function deleteItem2() {
 
 function deleteItem3() {
     var item3 = document.getElementById('shopping-item3');
-    let total = price1 + price2 + price3
     total -= price3;
     item3.remove();
     totalSpan.innerText = total;
 }
 
-//adding heart red color
+//Adding heart red color
 
 var heart1 = document.getElementById('heart1')
 var heart2 = document.getElementById('heart2')
 var heart3 = document.getElementById('heart3')
 
+var hearts = document.getElementsByClassName('hearts')
+
 heart1.addEventListener("click", turnRed1);
-heart2.addEventListener("click", turnRed2);
-heart3.addEventListener("click", turnRed3);
+heart2.addEventListener("click", turnRed1);
+heart3.addEventListener("click", turnRed1);
 
-function turnRed1(event) {
-  event.target.style.color = "red";
+function turnRed1(event) { 
+    console.log(event.target.style.color)
+    if(event.target.style.color != "red") {
+        event.target.style.color = "red";
+}   else {
+    event.target.style.color = ""
 }
-
-function turnRed2(event) {
-   event.target.style.color = "red";
 }
-
-function turnRed3(event) {
-    event.target.style.color = "red";
-}
-  
- 
